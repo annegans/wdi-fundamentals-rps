@@ -52,6 +52,10 @@ function getWinner(playerMove,computerMove) {
 var playerMove = 0 ;
 var computerMove = 0 ;
 
+
+if ((playerMove === "rock") && (computerMove === "paper")){
+    winner === "player";
+
 {
     if(playerMove  === computerMove){
     result = 'tie';
@@ -106,6 +110,15 @@ function playToFive() {
     /*  
 
   while (playerWins < 5 && computerWins < 5) {
+
+        if (winner === 'player'){
+          playerWins+=1;
+      } else if (winner === 'computer'){
+          computerWins+=1;
+      } else {
+          tie++
+      }     
+
        if  (playerMove === 'player'){
             playerWins +=1; 
        }
